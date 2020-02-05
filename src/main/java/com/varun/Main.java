@@ -10,7 +10,7 @@ import org.springframework.core.io.support.EncodedResource;
 import org.springframework.jdbc.datasource.SimpleDriverDataSource;
 import org.springframework.jdbc.datasource.init.ScriptUtils;
 
-import oracle.jdbc.driver.OracleDriver;
+//import oracle.jdbc.driver.OracleDriver;
 
 public class Main {
 
@@ -19,7 +19,7 @@ public class Main {
 		for(int i=1;i<175;i++) {
 			System.out.println(String.format(str, i+9,i));
 		}*/
-		DataSource dataSource = new SimpleDriverDataSource(new OracleDriver(), "jdbc:oracle:thin:@//172.16.82.19:1521/pstdb55.pstech.pstechnology.com","DFTE002","d0ne1n8" );
+		DataSource dataSource = new SimpleDriverDataSource(null, "jdbc:oracle:thin:@//172.16.82.19:1521/pstdb55.pstech.pstechnology.com","DFTE002","d0ne1n8" );
 		Connection connection  = null;
 		try {
 			System.out.println("started");

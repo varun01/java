@@ -1,4 +1,4 @@
-package com.varun.data_structures;
+package com.varun.data_structures.arrays;
 
 import java.util.Arrays;
 
